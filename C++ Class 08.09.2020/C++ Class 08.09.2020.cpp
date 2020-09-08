@@ -7,6 +7,7 @@ int main() {
 	char a = 'A';
 	char b = 'B';
 	char c = 'C';
+	char q = 'Q' or 'q';
 	do {
 		std::cout << "A. Save the game" << std::endl;
 		std::cout << "B. restart the game" << std::endl;
@@ -41,5 +42,6 @@ int main() {
 			std::cout << "Invalid input" << std::endl;
 			break;
 		}
-	} while (true); 
+	} while (option != 'q' && option != 'Q');
+	
 }
